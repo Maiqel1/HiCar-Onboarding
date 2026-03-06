@@ -33,8 +33,6 @@ export const Step1PersonalInfo = () => {
     resolver: zodResolver(step1Schema),
     defaultValues: step1,
   });
-
-  const watchedValues = watch();
   
   useEffect(() => {
     const subscription = watch((values) => {
