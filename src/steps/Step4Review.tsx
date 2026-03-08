@@ -80,7 +80,7 @@ const EMPLOYMENT_LABELS: Record<string, string> = {
 };
 
 export const Step4Review = () => {
-  const { step1, step2, step3, resetForm } = useFormStore();
+  const { step1, step2, step3 } = useFormStore();
   const { goBack, goToStep, currentStep } = useStepNavigation();
   const navigate = useNavigate();
   const [isSubmitting, setIsSubmitting] = useState(false);
